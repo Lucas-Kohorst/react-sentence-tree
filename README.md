@@ -24,20 +24,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Lucas-Kohorst/AutoSentanceTree">
-    <img src="static/images/header.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Auto Sentance Tree</h3>
+  <h3 align="center">React Sentence Tree</h3>
 
   <p align="center">
     Quickly visualize sentences in a Tree Diagram
     <br />
-    <a href="https://github.com/Lucas-Kohorst/AutoSentanceTree">View Demo</a>
+    <a href="https://npm.runkit.com/react-sentence-tree">View Demo</a>
     ·
-    <a href="https://github.com/Lucas-Kohorst/AutoSentanceTree/issues">Report Bug</a>
+    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Lucas-Kohorst/AutoSentanceTree/issues">Request Feature</a>
+    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues">Request Feature</a>
   </p>
 </p>
 
@@ -76,7 +73,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ### Built With
 * [React](https://github.com/facebook/react)
 * [CoreNLP - NPM](https://www.npmjs.com/package/corenlp)
-* [React-d3-Tree](https://www.npmjs.com/package/react-d3-tree)
+* [react-d3-Tree](https://www.npmjs.com/package/react-d3-tree)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -150,15 +147,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree
 [contributors-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social
 [forks-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//network/members
-[stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-treee.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social
 [stars-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers
-[issues-shield]: https://img.shields.io/github/issues/Lucas-Kohorst/react-sentencee-tree.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree
 [issues-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//issues
-[license-shield]: https://img.shields.io/github/license/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
+[license-shield]: https://img.shields.io/npm/l/react-sentence-tree
 [license-url]: https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lucaskohorst
