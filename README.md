@@ -14,16 +14,20 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree]][https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors]
+[![Forks][https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social]][https://github.com/Lucas-Kohorst/react-sentence-tree//network/members]
+[![Stargazers][https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social]][https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers]
+[![Issues][https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree]][https://github.com/Lucas-Kohorst/react-sentence-tree//issues]
+[![MIT License][https://img.shields.io/npm/l/react-sentence-tree]][https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt]
+[![LinkedIn][https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&]][https://linkedin.com/in/lucaskohorst]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
+  
+   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree">
+    <img src="static/images/header.png" alt="Logo" width="80" height="80">
+  </a>
 
   <h3 align="center">React Sentence Tree</h3>
 
@@ -114,7 +118,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-See the [open issues](https://github.com/Lucas-Kohorst/react-sentence-tree/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Lucas-Kohorst/AutoSentanceTree/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -144,19 +148,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [NLP Morphology and Dependency Trees](https://cloud.google.com/natural-language/docs/morphology)
 * [A Fundamental Algorithm for Dependency Parsing](http://web.stanford.edu/~mjkay/covington.pdf)
 * [Tree Syntax of Natural Language](cs.cornell.edu/courses/cs474/2004fa/lec1.pdf)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree
-[contributors-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social
-[forks-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//network/members
-[stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social
-[stars-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers
-[issues-shield]: https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree
-[issues-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//issues
-[license-shield]: https://img.shields.io/npm/l/react-sentence-tree
-[license-url]: https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/lucaskohorst
-[product-screenshot]: images/screenshot.png
