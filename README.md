@@ -117,7 +117,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-See the [open issues](https://github.com/Lucas-Kohorst/AutoSentanceTree/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Lucas-Kohorst/react-sentence-tree/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
