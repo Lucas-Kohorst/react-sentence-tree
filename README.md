@@ -42,6 +42,15 @@
 
 </p>
 
+## Quickstart
+```
+import { SentenceTree } from 'react-sentence-tree
+<SentenceTree sentence="The little dog ran fast"> // With custom sentence
+
+<SentenceTree> // Will generate with fallback data
+
+<SentenceTree textbox=true> // With textbox for sentence input
+```
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -119,7 +128,7 @@ import { SentenceTree } from 'react-sentence-tree
 
 <!-- Documentation -->
 ## Documentation
-## Props
+#### Props
 | Property                      | Type                   | Options                                                                                | Required? | Default                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------------|:-----------------------|:---------------------------------------------------------------------------------------|:----------|:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `data`                        | `array`<br/>`object`   |                                                                                        | required  | `undefined`                                                   | Single-element array containing the root node object (see `myTreeData` above). <br/> Passing the root node object without an array wrapping it is also possible. <br /><br /> `react-d3-tree` will automatically attach a unique `id` attribute to each node in the DOM, as well as `data-source-id` & `data-target-id` attributes to each link connecting two nodes.                                                                                                                                                                                  |
