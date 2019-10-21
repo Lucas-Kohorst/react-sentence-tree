@@ -24,10 +24,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  
-   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree">
-    <img src="static/images/header.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">React Sentence Tree</h3>
 
