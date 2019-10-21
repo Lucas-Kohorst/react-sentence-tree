@@ -1,6 +1,6 @@
 {
     "name": "react-sentence-tree",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "description": "React component to create a sentence tree diagram",
     "keywords": ["react", "sentence-tree", "tree", "diagram", "d3", "stanfordnlp", "corenlp"],
@@ -9,6 +9,7 @@
         "type": "git",
         "url": "https://github.com/Lucas-Kohorst/react-sentence-tree"
     },
+    "readme": "README.md",
     "license": "MIT",
     "author": {
         "name": "Lucas Kohorst",

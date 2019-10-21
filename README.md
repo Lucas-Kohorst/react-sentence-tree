@@ -150,15 +150,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/AutoSentanceTree.svg?style=flat-square
-[contributors-url]: https://github.com/Lucas-Kohorst/AutoSentanceTree/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Lucas-Kohorst/AutoSentanceTree.svg?style=flat-square
-[forks-url]: https://github.com/Lucas-Kohorst/AutoSentanceTree/network/members
-[stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/AutoSentanceTree.svg?style=flat-square
-[stars-url]: https://github.com/Lucas-Kohorst/AutoSentanceTree/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Lucas-Kohorst/AutoSentanceTree.svg?style=flat-square
-[issues-url]: https://github.com/Lucas-Kohorst/AutoSentanceTree/issues
-[license-shield]: https://img.shields.io/github/license/Lucas-Kohorst/AutoSentanceTree.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
+[contributors-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors
+[forks-shield]: https://img.shields.io/github/Lucas-Kohorst/react-sentence-tree/.svg?style=flat-square
+[forks-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//network/members
+[stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-treee.svg?style=flat-square
+[stars-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers
+[issues-shield]: https://img.shields.io/github/issues/Lucas-Kohorst/react-sentencee-tree.svg?style=flat-square
+[issues-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//issues
+[license-shield]: https://img.shields.io/github/license/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
 [license-url]: https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lucaskohorst
