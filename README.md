@@ -152,7 +152,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
 [contributors-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors
-[forks-shield]: https://img.shields.io/github/Lucas-Kohorst/react-sentence-tree/.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree.svg?style=flat-square
 [forks-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//network/members
 [stars-shield]: https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-treee.svg?style=flat-square
 [stars-url]: https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers
