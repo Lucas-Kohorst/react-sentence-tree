@@ -14,14 +14,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<a href="https://github.com/Lucas-Kohorst/react-sentence-tree//graphs/contributors"><img src="https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree"></img></a>
-<a href="https://github.com/Lucas-Kohorst/react-sentence-tree//network/members"><img src="https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
-<a href="https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers"><img src="https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
-<a href="https://github.com/Lucas-Kohorst/react-sentence-tree//issues"><img src="https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree"></img></a>
-<a href="https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt"><img src="https://img.shields.io/npm/l/react-sentence-tree"></img></a>
-<a href="https://linkedin.com/in/lucaskohorst"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555"></img></a>
-
-<br />
 <p align="center">
 
   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree">
@@ -39,6 +31,15 @@
     ·
     <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues">Request Feature</a>
   </p>
+
+  <div align="center">
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//network/members"><img src="https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers"><img src="https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//issues"><img src="https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-sentence-tree"></img></a>
+  <a href="https://linkedin.com/in/lucaskohorst"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555"></img></a>
+  </div>
+  
 </p>
 
 
