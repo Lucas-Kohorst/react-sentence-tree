@@ -3,7 +3,15 @@
     "version": "0.1.1",
     "private": false,
     "description": "React component to create a sentence tree diagram",
-    "keywords": ["react", "sentence-tree", "tree", "diagram", "d3", "stanfordnlp", "corenlp"],
+    "keywords": [
+        "react",
+        "sentence-tree",
+        "tree",
+        "diagram",
+        "d3",
+        "stanfordnlp",
+        "corenlp"
+    ],
     "homepage": "https://github.com/Lucas-Kohorst/react-sentence-tree/#readme",
     "repository": {
         "type": "git",
@@ -20,8 +28,6 @@
     "dependencies": {
         "@material-ui/core": "^4.5.1",
         "corenlp": "^1.5.2",
-        "corenlp-client": "^1.0.0",
-        "d3-node": "^2.2.0",
         "react": "^16.10.2",
         "react-d3-tree": "^1.15.3",
         "react-dom": "^16.10.2",

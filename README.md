@@ -39,7 +39,7 @@
   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-sentence-tree"></img></a>
   <a href="https://linkedin.com/in/lucaskohorst"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555"></img></a>
   </div>
-  
+
 </p>
 
 
@@ -49,9 +49,8 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
+  * [Building](#building)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -60,8 +59,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
@@ -82,31 +79,38 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+#### Import 
+```
+import { SentenceTree } from 'react-sentence-tree
+<SentenceTree sentence="The little dog ran fast"> // With custom sentence
 
-### Prerequisites
+<SentenceTree> // Will generate with fallback data
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
+<SentenceTree textbox=true> // With textbox for sentence input
 ```
 
-### Installation
+#### Building
+Install 
+```
+npm i 
+```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https:://github.com/your_username_/Project-Name.git
+Update corenlp request-promise-native. Navigate to node_modules/corenlp/dist/connector/connector-server.js
+
+Change this line 
 ```
-3. Install NPM packages
-```sh
-npm install
+var _requestPromiseNative = require('request-promise-native');
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+
+To this. In order to properly import request-promise-native
+
+```
+var _requestPromiseNative = require('../polyfills/request-promise-native');
+```
+
+Run it!
+```
+npm start
 ```
 
 <!-- USAGE EXAMPLES -->
