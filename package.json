@@ -1,0 +1,50 @@
+{
+    "name": "react-sentence-tree",
+    "version": "0.1.0",
+    "private": false,
+    "description": "React component to create a sentence tree diagram",
+    "keywords": ["react", "sentence-tree", "tree", "diagram", "d3", "stanfordnlp", "corenlp"],
+    "homepage": "https://github.com/Lucas-Kohorst/react-sentence-tree/#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Lucas-Kohorst/react-sentence-tree"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Lucas Kohorst",
+        "email": "kohorstlucas@gmail.com",
+        "url": "kohorstlucas.com"
+    },
+    "main": "./Components/SentenceTree.js",
+    "dependencies": {
+        "@material-ui/core": "^4.5.1",
+        "corenlp": "^1.5.2",
+        "corenlp-client": "^1.0.0",
+        "d3-node": "^2.2.0",
+        "react": "^16.10.2",
+        "react-d3-tree": "^1.15.3",
+        "react-dom": "^16.10.2",
+        "react-scripts": "3.2.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
