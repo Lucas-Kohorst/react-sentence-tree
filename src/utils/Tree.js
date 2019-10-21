@@ -1,4 +1,4 @@
-import CoreNLP, { Properties, Pipeline } from "corenlp";
+import CoreNLP, { Properties, Pipeline, ConnectorServer } from "corenlp";
 import { fallbackData } from './fallbackData'
 import { dfs } from './dfs'
 

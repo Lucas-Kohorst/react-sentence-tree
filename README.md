@@ -60,6 +60,7 @@ import { SentenceTree } from 'react-sentence-tree
 * [Getting Started](#getting-started)
   * [Installation](#installation)
   * [Building](#building)
+  * [Configuring StanfordNLP](#stanfordNLP)
 * [Documentation](#documentation)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -114,6 +115,82 @@ Run it!
 npm start
 ```
 
+#### StanfordNLP
+
+Credits to [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp)
+
+##### Download Stanford CoreNLP
+
+##### Shortcut (recommended to give this library a first try)
+
+Via `npm`, run this command from your own project after having installed this library:
+
+```bash
+npm explore corenlp -- npm run corenlp:download
+```
+
+Once downloaded you can easily start the server by running
+
+```bash
+npm explore corenlp -- npm run corenlp:server
+```
+
+Or you can manually download the project from the Stanford's CoreNLP download section at: https://stanfordnlp.github.io/CoreNLP/download.html
+You may want to download, apart of the full package, other language models (see more on that page).
+
+##### Via sources
+
+For advanced projects, when you have to customize the library a bit more, we highly recommend to download the StanfordCoreNLP from the [original repository](https://github.com/stanfordnlp/CoreNLP), and compile the source code by using `ant jar`.
+
+*NOTE*: Some functionality included in this library, for `TokensRegex`, `Semgrex` and `Tregex`, requires the latest version from that repository, which contains some fixes needed by this library, not included in the latest stable release.
+
+##### Configure Stanford CoreNLP
+
+There are two method to connect your NodeJS application to Stanford CoreNLP:
+
+1. HTTP is the preferred method since it requires CoreNLP to initialize just once to serve many requests, it also avoids extra I/O given that the CLI method need to write temporary files to run *recommended*.
+2. Via Command Line Interface, this is by spawning processes from your app.
+
+
+##### Using StanfordCoreNLPServer
+
+```bash
+# Run the server using all jars in the current directory (e.g., the CoreNLP home directory)
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+```
+
+CoreNLP connects by default via StanfordCoreNLPServer, using port 9000.  You can also opt to setup the connection differently:
+
+You can configure the corenlp settings in [utils/Tree.js](https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/src/utils/Tree.js)
+
+```javascript
+import CoreNLP, { Properties, Pipeline, ConnectorServer } from 'corenlp';
+
+const connector = new ConnectorServer({ dsn: 'http://localhost:9000' });
+const props = new Properties({
+  annotators: 'tokenize,ssplit,pos,lemma,ner,parse',
+});
+const pipeline = new Pipeline(props, 'English', connector);
+```
+
+##### Use CoreNLP via CLI
+
+CoreNLP expects by default the StanfordCoreNLP package to be placed (unzipped) inside the path `${YOUR_NPM_PROJECT_ROOT}/corenlp/`.  You can also opt to setup the CLI interface differently:
+
+```javascript
+import CoreNLP, { Properties, Pipeline, ConnectorCli } from 'corenlp';
+
+const connector = new ConnectorCli({
+  classPath: 'corenlp/stanford-corenlp-full-2017-06-09/*', // specify the paths relative to your npm project root
+  mainClass: 'edu.stanford.nlp.pipeline.StanfordCoreNLP', // optional
+  props: 'StanfordCoreNLP-spanish.properties', // optional
+});
+const props = new Properties({
+  annotators: 'tokenize,ssplit,pos,lemma,ner,parse',
+});
+const pipeline = new Pipeline(props, 'English', connector);
+```
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -128,6 +205,9 @@ import { SentenceTree } from 'react-sentence-tree
 
 <!-- Documentation -->
 ## Documentation
+
+Credits to [react-d3-tree @bkrem](https://www.npmjs.com/package/react-d3-tree)
+
 #### Props
 | Property                      | Type                   | Options                                                                                | Required? | Default                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------------|:-----------------------|:---------------------------------------------------------------------------------------|:----------|:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -187,9 +267,14 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Research and Acknowledgments
+### Research
 * [Penn Treeebank Constitutes](http://surdeanu.info/mihai/teaching/ista555-fall13/readings/PennTreebankConstituents.html)
 * [Stanford NLP Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 * [Syntax Tree](http://mshang.ca/syntree/)
 * [NLP Morphology and Dependency Trees](https://cloud.google.com/natural-language/docs/morphology)
 * [A Fundamental Algorithm for Dependency Parsing](http://web.stanford.edu/~mjkay/covington.pdf)
 * [Tree Syntax of Natural Language](cs.cornell.edu/courses/cs474/2004fa/lec1.pdf)
+
+### Packages
+* [react-d3-tree @bkrem](https://www.npmjs.com/package/react-d3-tree)
+* [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp)
