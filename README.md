@@ -14,8 +14,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[Contributers]: https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree
 [![Forks][https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social]][https://github.com/Lucas-Kohorst/react-sentence-tree//network/members]
+![Contributers](https://img.shields.io/github/contributors/Lucas-Kohorst/react-sentence-tree)
 [![Stargazers][https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social]][https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers]
 [![Issues][https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree]][https://github.com/Lucas-Kohorst/react-sentence-tree//issues]
 [![MIT License][https://img.shields.io/npm/l/react-sentence-tree]][https://github.com/Lucas-Kohorst/AutoSentanceTreee/blob/master/LICENSE.txt]
