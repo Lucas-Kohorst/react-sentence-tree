@@ -1,6 +1,6 @@
 {
     "name": "react-sentence-tree",
-    "version": "0.1.4",
+    "version": "0.2.1",
     "private": false,
     "description": "React component to create a sentence tree diagram",
     "keywords": [
@@ -24,7 +24,7 @@
         "email": "kohorstlucas@gmail.com",
         "url": "kohorstlucas.com"
     },
-    "main": "./Components/SentenceTree.js",
+    "main": "./src/Components/SentenceTree.js",
     "dependencies": {
         "@material-ui/core": "^4.5.1",
         "corenlp": "^1.5.2",
