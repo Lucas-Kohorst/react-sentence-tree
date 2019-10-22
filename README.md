@@ -21,20 +21,20 @@
   <p align="center">
     Quickly visualize sentences in a Tree Diagram
     <br />
-    <a href="https://npm.runkit.com/react-sentence-tree">View Demo</a>
+    <a href="https://npm.runkit.com/react-sentence-tree" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues">Report Bug</a>
+    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues">Request Feature</a>
+    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues" target="_blank">Request Feature</a>
   </p>
 
   <div align="center">
-  <a href="https://badge.fury.io/js/react-sentence-tree"><img src="https://badge.fury.io/js/react-sentence-tree.svg" alt="npm version" height="18"></a>
-  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//network/members"><img src="https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
-  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers"><img src="https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
-  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//issues"><img src="https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree"></img></a>
-  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-sentence-tree"></img></a>
-  <a href="https://linkedin.com/in/lucaskohorst"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555"></img></a>
+  <a href="https://badge.fury.io/js/react-sentence-tree" target="_blank"><img src="https://badge.fury.io/js/react-sentence-tree.svg" alt="npm version" height="18"></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//network/members" target="_blank"><img src="https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers" target="_blank"><img src="https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//issues" target="_blank"><img src="https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree"></img></a>
+  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/npm/l/react-sentence-tree"></img></a>
+  <a href="https://linkedin.com/in/lucaskohorst"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555 target="_blank""></img></a>
   </div>
 
 </p>
