@@ -29,6 +29,7 @@
   </p>
 
   <div align="center">
+  <a href="https://badge.fury.io/js/react-sentence-tree"><img src="https://badge.fury.io/js/react-sentence-tree.svg" alt="npm version" height="18"></a>
   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//network/members"><img src="https://img.shields.io/github/forks/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//stargazers"><img src="https://img.shields.io/github/stars/Lucas-Kohorst/react-sentence-tree?style=social"></img></a>
   <a href="https://github.com/Lucas-Kohorst/react-sentence-tree//issues"><img src="https://img.shields.io/github/issues/Lucas-Kohorst/react-sentence-tree"></img></a>
