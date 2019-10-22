@@ -39,6 +39,9 @@
 
 </p>
 
+# Work in Progress
+#### This project is currently a work in progress and may not work as intended
+
 ## Quickstart
 ```
 import { SentenceTree } from 'react-sentence-tree
