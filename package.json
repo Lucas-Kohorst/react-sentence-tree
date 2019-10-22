@@ -1,59 +1,51 @@
 {
     "name": "react-sentence-tree",
-    "version": "0.2.1",
-    "private": false,
-    "description": "React component to create a sentence tree diagram",
-    "keywords": [
-        "react",
-        "sentence-tree",
-        "tree",
-        "diagram",
-        "d3",
-        "stanfordnlp",
-        "corenlp"
-    ],
-    "homepage": "https://github.com/Lucas-Kohorst/react-sentence-tree/#readme",
+    "version": "2.0.0",
+    "description": "Create sentence trees with this react component",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepublishOnly": "babel ./src --out-dir ./dist -s inline",
+        "corenlp:download": "./scripts/corenlp-download",
+        "corenlp:server": "./scripts/corenlp-server"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/Lucas-Kohorst/react-sentence-tree"
     },
-    "readme": "README.md",
-    "license": "MIT",
+    "keywords": [
+        "react",
+        "sentence",
+        "d3",
+        "corenlp",
+        "nlp"
+    ],
     "author": {
         "name": "Lucas Kohorst",
         "email": "kohorstlucas@gmail.com",
         "url": "kohorstlucas.com"
     },
-    "main": "./src/Components/SentenceTree.js",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Lucas-Kohorst/react-sentence-tree/issues"
+    },
+    "homepage": "https://github.com/Lucas-Kohorst/react-sentence-tree",
+    "readme": "https://github.com/Lucas-Kohorst/react-sentence-tree#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.6.4",
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/preset-react": "^7.6.3"
+    },
+    "peerDependencies": {
+        "react": "^16.10.2"
+    },
+    "files": [
+        "dist/*"
+    ],
     "dependencies": {
         "@material-ui/core": "^4.5.1",
         "corenlp": "^1.5.2",
-        "react": "^16.10.2",
-        "react-d3-tree": "^1.15.3",
-        "react-dom": "^16.10.2",
-        "react-scripts": "3.2.0"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "corenlp:download": "./scripts/corenlp-download",
-        "corenlp:server": "./scripts/corenlp-server"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
+        "react-d3-tree": "^1.15.3"
     }
 }

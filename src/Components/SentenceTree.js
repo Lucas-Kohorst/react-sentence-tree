@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import Tree from "react-d3-tree";
 import TextField from "@material-ui/core/TextField";
 
-import { getTreeData } from './../utils/Tree'
-import { fallbackData } from './../utils/fallbackData'
+import { getTreeData } from "./../utils/Tree";
+import { fallbackData } from "./../utils/fallbackData";
 
 const containerStyles = {
   width: "100%",
@@ -17,14 +17,12 @@ class SentenceTree extends Component {
     this.state = {
       treeData: fallbackData,
       translate: {},
-      sentence: this.props.sentence
-        ? this.props.sentence
-        : ""
+      sentence: this.props.sentence ? this.props.sentence : ""
     };
   }
 
   componentWillMount() {
-    this._updateTree()
+    this._updateTree();
   }
 
   componentDidMount() {
@@ -49,7 +47,7 @@ class SentenceTree extends Component {
     this.setState({
       sentence: event.target.value
     });
-    this._updateTree()
+    this._updateTree();
   }
 
   render() {
@@ -67,7 +65,6 @@ class SentenceTree extends Component {
             shrink: true
           }}
         />
-        <h1>{this.state.sentence}</h1>
         <Tree
           data={this.state.treeData}
           translate={this.state.translate}
@@ -78,4 +75,4 @@ class SentenceTree extends Component {
   }
 }
 
-export { SentenceTree }
+export { SentenceTree };

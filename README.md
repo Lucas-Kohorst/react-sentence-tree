@@ -52,6 +52,29 @@ import { SentenceTree } from 'react-sentence-tree
 <SentenceTree textbox=true> // With textbox for sentence input
 ```
 
+## Failed to Compile
+If you receive this error an error similar to 
+```
+./node_modules/corenlp/dist/connector/connector-server.js
+Module not found: Can't resolve 'request-promise-native' in '/<filepath>/node_modules/corenlp/dist/connector'
+```
+
+Don't worry this can easily be fixed by opening ```/<filepath>/node_modules/corenlp/dist/package.json``` and changing the following line
+
+```
+"request-promise-native": "./src/polyfills/request-promise-native.js",
+```
+ 
+to
+
+```
+"request-promise-native": "./dist/polyfills/request-promise-native.js",
+```
+
+I have opened a [pull request](https://github.com/gerardobort/node-corenlp/pull/56) for this as well. 
+Now the package should work. If you are still having problems open an [issue](https://github.com/Lucas-Kohorst/react-sentence-tree//issues)
+or [contact me](#contact)
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -60,7 +83,7 @@ import { SentenceTree } from 'react-sentence-tree
 * [Getting Started](#getting-started)
   * [Installation](#installation)
   * [Building](#building)
-  * [Configuring StanfordNLP](#stanfordNLP)
+  * [Configuring StanfordNLP](#StandfordNLP)
 * [Documentation](#documentation)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
