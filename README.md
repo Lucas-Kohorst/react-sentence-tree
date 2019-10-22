@@ -15,11 +15,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <p align="center">
-
-  <a href="https://github.com/Lucas-Kohorst/react-sentence-tree" align="center">
-    <img src="static/images/header.png" alt="Logo" width="80" height="80" align="center">
-  </a>
-
+  
   <h3 align="center">React Sentence Tree</h3>
 
   <p align="center">
