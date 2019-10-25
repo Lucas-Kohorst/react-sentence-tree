@@ -1,7 +1,7 @@
 // Array of visited nodes
-var visit = [];
+var visitConstituency = [];
 // Visited Node Counter
-var vn = 0;
+var vnConstituency = 0;
 /**
  * DFS that traverses the tree
  * and then adds a name attribute
@@ -9,12 +9,12 @@ var vn = 0;
  * to each node
  * @param v the structure to traverse
  */
-function dfs(v) {
+function dfsConstituency(v) {
     Object.keys(v).forEach(function(k) {
-        if (!visit[vn++]) {
+        if (!visitConstituency[vnConstituency++]) {
             // Checking if ROOT
             if (v[k].pos == "ROOT") {
-                v[k].name = "ROOT"
+                v[k].name = "ROOT";
             }
             if (typeof v[k] === "object") {
                 try {
@@ -24,13 +24,48 @@ function dfs(v) {
                 } catch (error) {}
                 // Adding the name attribute
                 v[k].name = word + " (" + pos + ")";
-                dfs(v[k]);
+                dfsConstituency(v[k]);
             }
         } else {
-            visit.splice(vn, 0, true);
+            visitConstituency.splice(vnConstituency, 0, true);
         }
     });
     return v;
 }
 
-export { dfs }
+// Array of visited nodes
+var visitDependency = [];
+// Visited Node Counter
+var vnDependency = 0;
+/**
+ * DFS that traverses the tree
+ * and then adds a name attribute
+ * in the form of "Word (POS)"
+ * to each node
+ * @param v the structure to traverse
+ */
+function dfsDependency(v) {
+    Object.keys(v).forEach(function(k) {
+        if (!visitDependency[vnDependency++]) {
+            // Checking if ROOT
+            if (v[k].Relationship == "ROOT") {
+                v[k].name = "ROOT";
+            }
+            if (typeof v[k] === "object") {
+                try {
+                    // Getting the Word and POS
+                    var word = v[k].Name;
+                    var pos = v[k].Relationship.toUpperCase();
+                } catch (error) {}
+                // Adding the name attribute
+                v[k].name = word + " (" + pos + ")";
+                dfsDependency(v[k]);
+            }
+        } else {
+            visitDependency.splice(vnDependency, 0, true);
+        }
+    });
+    return v;
+}
+
+export { dfsConstituency, dfsDependency };

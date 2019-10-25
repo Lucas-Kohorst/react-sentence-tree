@@ -1,147 +1,86 @@
-const fallbackData = [{
-    pos: "ROOT",
-    word: "",
-    name: "ROOT",
+const fallbackDependency = [{
+    Name: "shot",
+    Relationship: "ROOT",
     children: [{
-        pos: "sentence",
-        word: "",
-        name: "Sentence",
-        children: [{
-                pos: "sn",
-                word: "",
-                name: "SN",
-                children: [{
-                    pos: "grup.nom",
-                    word: "",
-                    name: "GRUP.NOM",
-                    children: [{
-                            pos: "np00000",
-                            word: "The",
-                            name: "The (NP)",
-                            token: {
-                                index: 1,
-                                word: "The",
-                                originalText: "The",
-                                characterOffsetBegin: 0,
-                                characterOffsetEnd: 3,
-                                before: "",
-                                after: " ",
-                                pos: "np00000"
-                            },
-                            children: []
-                        },
-                        {
-                            pos: "np00000",
-                            word: "little",
-                            name: "Little (NP)",
-                            token: {
-                                index: 2,
-                                word: "little",
-                                originalText: "little",
-                                characterOffsetBegin: 4,
-                                characterOffsetEnd: 10,
-                                before: " ",
-                                after: " ",
-                                pos: "np00000"
-                            },
-                            children: []
-                        },
-                        {
-                            pos: "np00000",
-                            word: "dog",
-                            name: "Dog (NP)",
-                            token: {
-                                index: 3,
-                                word: "dog",
-                                originalText: "dog",
-                                characterOffsetBegin: 11,
-                                characterOffsetEnd: 14,
-                                before: " ",
-                                after: " ",
-                                pos: "np00000"
-                            },
-                            children: []
-                        }
-                    ]
-                }]
-            },
-            {
-                pos: "sn",
-                word: "",
-                name: "SN",
-                children: [{
-                    pos: "grup.nom",
-                    word: "",
-                    name: "GRUP.NOM",
-                    children: [{
-                            pos: "np00000",
-                            word: "runs",
-                            name: "Runs (NP)",
-                            token: {
-                                index: 4,
-                                word: "runs",
-                                originalText: "runs",
-                                characterOffsetBegin: 15,
-                                characterOffsetEnd: 19,
-                                before: " ",
-                                after: " ",
-                                pos: "np00000"
-                            },
-                            children: []
-                        },
-                        {
-                            pos: "np00000",
-                            word: "so",
-                            name: "So (NP)",
-                            token: {
-                                index: 5,
-                                word: "so",
-                                originalText: "so",
-                                characterOffsetBegin: 20,
-                                characterOffsetEnd: 22,
-                                before: " ",
-                                after: " ",
-                                pos: "np00000"
-                            },
-                            children: []
-                        },
-                        {
-                            pos: "np00000",
-                            word: "fast",
-                            name: "Fast (NP)",
-                            token: {
-                                index: 6,
-                                word: "fast",
-                                originalText: "fast",
-                                characterOffsetBegin: 23,
-                                characterOffsetEnd: 27,
-                                before: " ",
-                                after: "",
-                                pos: "np00000"
-                            },
-                            children: []
-                        }
-                    ]
-                }]
-            },
-            {
-                pos: "fp",
-                word: ".",
-                name: ". (FP)",
-                token: {
-                    index: 7,
-                    word: ".",
-                    originalText: ".",
-                    characterOffsetBegin: 27,
-                    characterOffsetEnd: 28,
-                    before: "",
-                    after: "",
-                    pos: "fp"
+            Name: "I",
+            Relationship: "nsubj",
+            name: "I (NSUBJ)"
+        },
+        {
+            Name: "elephant",
+            Relationship: "dobj",
+            children: [{
+                Name: "the",
+                Relationship: "det",
+                name: "the (DET)"
+            }],
+            name: "elephant (DOBJ)"
+        },
+        {
+            Name: "pjs",
+            Relationship: "nmod",
+            children: [{
+                    Name: "in",
+                    Relationship: "case",
+                    name: "in (CASE)"
                 },
-                children: []
-            }
-        ]
-    }]
+                {
+                    Name: "my",
+                    Relationship: "nmod:poss",
+                    name: "my (NMOD:POSS)"
+                }
+            ],
+            name: "pjs (NMOD)"
+        }
+    ],
+    name: "shot (ROOT)"
 }];
 
-export { fallbackData };
+const fallbackConstituency = [{
+    name: "ROOT",
+    children: [{
+            name: "S",
+            children: [{
+                name: "NP",
+                children: [{
+                    name: "PRPI"
+                }]
+            }]
+        },
+        {
+            name: "VP",
+            children: [{
+                    name: "VBDshot"
+                },
+                {
+                    name: "NP",
+                    children: [{
+                            name: "DTthe"
+                        },
+                        {
+                            name: "NNelephant"
+                        }
+                    ]
+                },
+                {
+                    name: "PP",
+                    children: [{
+                        name: "INin"
+                    }]
+                },
+                {
+                    name: "NP",
+                    children: [{
+                            name: "PRPmy"
+                        },
+                        {
+                            name: "NNSpjs"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}];
+
+export { fallbackDependency, fallbackConstituency };
