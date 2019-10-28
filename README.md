@@ -1,19 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 <p align="center">
   
   <h3 align="center">React Sentence Tree</h3>
@@ -42,14 +26,55 @@
 # Work in Progress
 #### This project is currently a work in progress and may not work as intended
 
-## Quickstart
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [Quick Start](#quick-start)
+  * [Failed to Compile](#failed-to-compile)
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Installation](#1.-Install)
+  * [Configuring StanfordNLP](#3.-StanfordNLP)
+* [Documentation](#documentation)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
+## Quick Start
+This is a react component that will render constituency/syntactical and dependency trees based on sentence input
+
+#### 1. Install
+```npm i react-sentence-tree```
+
+#### 2. Import 
+```import { SentenceTree } from 'react-sentence-tree```
+
+#### Start a Stanford CoreNLP Server
+Stanford CoreNLP can by downloaded and ran through npm thanks to [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp). If you want to [compile from sources see below](#StandfordNLP)
+
 ```
-import { SentenceTree } from 'react-sentence-tree
-<SentenceTree sentence="The little dog ran fast"> // With custom sentence
+npm explore corenlp -- npm run corenlp:download
+```
 
-<SentenceTree> // Will generate with fallback data
+Once downloaded you can easily start the server by running
 
-<SentenceTree textbox=true> // With textbox for sentence input
+```bash
+npm explore corenlp -- npm run corenlp:server
+```
+
+#### 3. Render
+```
+// Custom sentence
+<SentenceTree sentence="The little dog ran fast">
+
+// Dependency Tree
+<SentenceTree type={"dependency"} textbox=true>
+
+// Textbox for user input
+<SentenceTree textbox=true>
 ```
 
 ## Failed to Compile
@@ -75,26 +100,10 @@ I have opened a [pull request](https://github.com/gerardobort/node-corenlp/pull/
 Now the package should work. If you are still having problems open an [issue](https://github.com/Lucas-Kohorst/react-sentence-tree//issues)
 or [contact me](#contact)
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Installation](#installation)
-  * [Building](#building)
-  * [Configuring StanfordNLP](#StandfordNLP)
-* [Documentation](#documentation)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A sentence diagram is an easy way to view the structure of a sentence. Build a tree from sentence with this react component.
+This react component provides an easy way to the constituency/syntactical structure or dependency tree of a sentence.
 
 ### Built With
 * [React](https://github.com/facebook/react)
@@ -104,57 +113,29 @@ A sentence diagram is an easy way to view the structure of a sentence. Build a t
 <!-- GETTING STARTED -->
 ## Getting Started
 
-#### Import 
-```
-import { SentenceTree } from 'react-sentence-tree
-<SentenceTree sentence="The little dog ran fast"> // With custom sentence
+#### 1. Install
+```npm i react-sentence-tree```
 
-<SentenceTree> // Will generate with fallback data
+#### 2. Import 
+```import { SentenceTree } from 'react-sentence-tree```
 
-<SentenceTree textbox=true> // With textbox for sentence input
-```
-
-#### Building
-Install 
-```
-npm i 
-```
-
-Update corenlp request-promise-native. Navigate to node_modules/corenlp/dist/connector/connector-server.js
-
-Change this line 
-```
-var _requestPromiseNative = require('request-promise-native');
-```
-
-To this. In order to properly import request-promise-native
-
-```
-var _requestPromiseNative = require('../polyfills/request-promise-native');
-```
-
-Run it!
-```
-npm start
-```
-
-#### StanfordNLP
+#### 3. StanfordNLP
 
 Credits to [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp)
 
 ##### Download Stanford CoreNLP
 
-##### Shortcut (recommended to give this library a first try)
+##### Shortcut
 
 Via `npm`, run this command from your own project after having installed this library:
 
-```bash
+```
 npm explore corenlp -- npm run corenlp:download
 ```
 
 Once downloaded you can easily start the server by running
 
-```bash
+```
 npm explore corenlp -- npm run corenlp:server
 ```
 
@@ -165,15 +146,12 @@ You may want to download, apart of the full package, other language models (see 
 
 For advanced projects, when you have to customize the library a bit more, we highly recommend to download the StanfordCoreNLP from the [original repository](https://github.com/stanfordnlp/CoreNLP), and compile the source code by using `ant jar`.
 
-*NOTE*: Some functionality included in this library, for `TokensRegex`, `Semgrex` and `Tregex`, requires the latest version from that repository, which contains some fixes needed by this library, not included in the latest stable release.
-
 ##### Configure Stanford CoreNLP
 
 There are two method to connect your NodeJS application to Stanford CoreNLP:
 
 1. HTTP is the preferred method since it requires CoreNLP to initialize just once to serve many requests, it also avoids extra I/O given that the CLI method need to write temporary files to run *recommended*.
 2. Via Command Line Interface, this is by spawning processes from your app.
-
 
 ##### Using StanfordCoreNLPServer
 
@@ -184,54 +162,46 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -t
 
 CoreNLP connects by default via StanfordCoreNLPServer, using port 9000.  You can also opt to setup the connection differently:
 
-You can configure the corenlp settings in [utils/Tree.js](https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/src/utils/Tree.js)
+You can configure the corenlp port in [utils/Tree.js](https://github.com/Lucas-Kohorst/react-sentence-tree/blob/master/src/utils/Tree.js)
 
-```javascript
+```
 import CoreNLP, { Properties, Pipeline, ConnectorServer } from 'corenlp';
 
+// Configure to port of your choosing 9000 default
 const connector = new ConnectorServer({ dsn: 'http://localhost:9000' });
-const props = new Properties({
-  annotators: 'tokenize,ssplit,pos,lemma,ner,parse',
-});
-const pipeline = new Pipeline(props, 'English', connector);
+
+// Pass it into the pipeline
+const pipeline = new Pipeline(props, "English", connector);
 ```
 
-##### Use CoreNLP via CLI
-
-CoreNLP expects by default the StanfordCoreNLP package to be placed (unzipped) inside the path `${YOUR_NPM_PROJECT_ROOT}/corenlp/`.  You can also opt to setup the CLI interface differently:
-
-```javascript
-import CoreNLP, { Properties, Pipeline, ConnectorCli } from 'corenlp';
-
-const connector = new ConnectorCli({
-  classPath: 'corenlp/stanford-corenlp-full-2017-06-09/*', // specify the paths relative to your npm project root
-  mainClass: 'edu.stanford.nlp.pipeline.StanfordCoreNLP', // optional
-  props: 'StanfordCoreNLP-spanish.properties', // optional
-});
-const props = new Properties({
-  annotators: 'tokenize,ssplit,pos,lemma,ner,parse',
-});
-const pipeline = new Pipeline(props, 'English', connector);
+## 4. Usage
 ```
+// Custom sentence
+<SentenceTree sentence="The little dog ran fast">
 
-<!-- USAGE EXAMPLES -->
-## Usage
+// Dependency Tree
+<SentenceTree type={"dependency"} textbox=true>
 
-```
-import { SentenceTree } from 'react-sentence-tree
-<SentenceTree sentence="The little dog ran fast"> // With custom sentence
+// Textbox for user input
+<SentenceTree textbox=true>
 
-<SentenceTree> // Will generate with fallback data
-
-<SentenceTree textbox=true> // With textbox for sentence input
+// @todo Add more usage examples
 ```
 
 <!-- Documentation -->
 ## Documentation
 
+#### Sentence Props
+| **Property** | **Type** | **Required?** | **Options**              | **Default**                        | **Description**                                                    |
+|---------------|----------|---------------|--------------------------|------------------------------------|--------------------------------------------------------------------|
+| sentence      | string   |               |                          | "I shot an elephant in my pajammas | The sentence that you want to render as a tree                     |
+| type          | string   |               | constituency, dependency | constituency                       | The type of tree you want to render                                |
+| textField     | boolean  |               | true, false              | false                              | If you want to render a text field for the user to input sentences |
+
+
+#### Tree Props
 Credits to [react-d3-tree @bkrem](https://www.npmjs.com/package/react-d3-tree)
 
-#### Props
 | Property                      | Type                   | Options                                                                                | Required? | Default                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------------|:-----------------------|:---------------------------------------------------------------------------------------|:----------|:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `data`                        | `array`<br/>`object`   |                                                                                        | required  | `undefined`                                                   | Single-element array containing the root node object (see `myTreeData` above). <br/> Passing the root node object without an array wrapping it is also possible. <br /><br /> `react-d3-tree` will automatically attach a unique `id` attribute to each node in the DOM, as well as `data-source-id` & `data-target-id` attributes to each link connecting two nodes.                                                                                                                                                                                  |
@@ -271,12 +241,12 @@ See the [open issues](https://github.com/Lucas-Kohorst/react-sentence-tree/issue
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Feel free to fork, open pull requests and contribute to this project
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/<feature>`)
+3. Commit your Changes (`git commit -m 'Useful description of the feature'`)
+4. Push to the Branch (`git push origin feature/<feature>`)
 5. Open a Pull Request
 
 <!-- LICENSE -->
@@ -293,10 +263,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ### Research
 * [Penn Treeebank Constitutes](http://surdeanu.info/mihai/teaching/ista555-fall13/readings/PennTreebankConstituents.html)
 * [Stanford NLP Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
-* [Syntax Tree](http://mshang.ca/syntree/)
-* [NLP Morphology and Dependency Trees](https://cloud.google.com/natural-language/docs/morphology)
 * [A Fundamental Algorithm for Dependency Parsing](http://web.stanford.edu/~mjkay/covington.pdf)
 * [Tree Syntax of Natural Language](cs.cornell.edu/courses/cs474/2004fa/lec1.pdf)
+* [Constituency vs. Dependency Parsing](http://www.ruslang.ru/doc/melchuk_festschrift2012/Kahane.pdf.)
+* [Constituency Parsing](https://web.stanford.edu/~jurafsky/slp3/13.pdf.)
+* [Dependency Parsing](https://web.stanford.edu/~jurafsky/slp3/15.pdf.)
+* [Ideas for hard to parse sentences](https://www.reddit.com/r/LanguageTechnology/comments/dlj40d/what_are_some_of_the_hardest_types_or_examples_of/.)
 
 ### Packages
 * [react-d3-tree @bkrem](https://www.npmjs.com/package/react-d3-tree)
