@@ -15,14 +15,15 @@ import { fallbackDependency, fallbackConstituency } from "./fallbackData";
 /**
  * Takes in a sentence and returns
  * the JSON data of the sentence's dependency tree
- * @param {*} treeData the sentence structure data
+ * @param {String} treeData the sentence structure data
+ * @param {String} language the language to parse
  */
-function getDependencyTree(sentence) {
+function getDependencyTree(sentence, language) {
     return new Promise((resolve, reject) => {
         const props = new Properties({
             annotators: "parse"
         });
-        const pipeline = new Pipeline(props, "English"); // uses ConnectorServer by default
+        const pipeline = new Pipeline(props, language); // uses ConnectorServer by default
 
         const sent = new CoreNLP.simple.Sentence(sentence);
         pipeline
@@ -56,14 +57,15 @@ function getDependencyTree(sentence) {
 /**
  * Takes in a sentence and returns
  * the JSON data of the sentence's dependency tree
- * @param {*} treeData the sentence structure data
+ * @param {String} treeData the sentence structure data
+ * @param {String} language the language to parse
  */
-function getConstituencyTree(sentence) {
+function getConstituencyTree(sentence, language) {
     return new Promise((resolve, reject) => {
         const props = new Properties({
             annotators: "parse"
         });
-        const pipeline = new Pipeline(props, "English"); // uses ConnectorServer by default
+        const pipeline = new Pipeline(props, language); // uses ConnectorServer by default
 
         const sent = new CoreNLP.simple.Sentence(sentence);
         pipeline

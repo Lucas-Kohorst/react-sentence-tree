@@ -22,7 +22,8 @@ class SentenceTree extends Component {
       sentence: this.props.sentence ? this.props.sentence : "",
       type: this.props.type ? this.props.type : "constituency",
       header: this.props.header ? true : false,
-      textField: this.props.textField ? true : false
+      textField: this.props.textField ? true : false,
+      language: this.props.language ? this.props.language : "English"
     };
   }
 
@@ -42,7 +43,7 @@ class SentenceTree extends Component {
 
   updateTree() {
     if (this.state.type == "constituency") {
-      getConstituencyTree(this.state.sentence).then(value => {
+      getConstituencyTree(this.state.sentence, this.state.language).then(value => {
         this.setState({
           treeData: value
         })
@@ -50,7 +51,7 @@ class SentenceTree extends Component {
     } 
     
     if (this.state.type == "dependency") {
-      getDependencyTree(this.state.sentence).then(value => {
+      getDependencyTree(this.state.sentence, this.state.language).then(value => {
         this.setState({
           treeData: value
         });

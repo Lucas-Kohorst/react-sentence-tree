@@ -192,11 +192,12 @@ const pipeline = new Pipeline(props, "English", connector);
 ## Documentation
 
 #### Sentence Props
-| **Property** | **Type** | **Required?** | **Options**              | **Default**                        | **Description**                                                    |
-|---------------|----------|---------------|--------------------------|------------------------------------|--------------------------------------------------------------------|
-| sentence      | string   |               |                          | "I shot an elephant in my pajammas | The sentence that you want to render as a tree                     |
-| type          | string   |               | constituency, dependency | constituency                       | The type of tree you want to render                                |
-| textField     | boolean  |               | true, false              | false                              | If you want to render a text field for the user to input sentences |
+| **Property** | **Type** | **Required?** | **Options**                                                 | **Default**                        | **Description**                                   |
+|--------------|----------|---------------|-------------------------------------------------------------|------------------------------------|---------------------------------------------------|
+| sentence     | string   |               |                                                             | "I shot an elephant in my pajamas" | The sentence that you wish to parse               |
+| type         | string   |               | "constituency", "dependency"                                | constituency                       | The type of tree you want to generate             |
+| textField    | boolean  |               | true, false                                                 | false                              | If you want to render a text field for user input |
+| language     | string   |               | see https://github\.com/stanfordnlp/CoreNLP\#latest\-models | "English"                          | The language you want to parse                    |
 
 
 #### Tree Props
