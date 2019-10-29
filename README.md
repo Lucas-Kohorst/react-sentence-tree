@@ -113,13 +113,13 @@ This react component provides an easy way to the constituency/syntactical struct
 <!-- GETTING STARTED -->
 ## Getting Started
 
-#### 1. Install
+## 1. Install
 ```npm i react-sentence-tree```
 
-#### 2. Import 
+## 2. Import 
 ```import { SentenceTree } from 'react-sentence-tree```
 
-#### 3. StanfordNLP
+## 3. StanfordNLP
 
 Credits to [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp)
 
