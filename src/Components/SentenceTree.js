@@ -104,6 +104,31 @@ class SentenceTree extends Component {
           data={this.state.treeData}
           translate={this.state.translate}
           orientation={"vertical"}
+          // Props that can be applied to the tree
+          // @see https://github.com/Lucas-Kohorst/react-sentence-tree#tree-props
+          nodeSvgShape={this.props.nodeSvgShape}
+          nodeLabelComponent={this.props.nodeLabelComponent}
+          onClick={this.props.onClick}
+          onMouseOver={this.props.onMouseOver}
+          onMouseOut={this.props.onMouseOut}
+          onLinkClick={this.props.onLinkClick}
+          onLinkMouseOver={this.props.onLinkMouseOver}
+          onLinkMouseOut={this.props.onLinkMouseOut}
+          onUpdate={this.props.onUpdate}
+          pathFunc={this.props.pathFunc}
+          collapsible={this.props.collapsible}
+          useCollapseData={this.props.useCollapseData}
+          shouldCollapseNeighborNodes={this.props.shouldCollapseNeighborNodes}
+          initialDepth={this.props.initialDepth}
+          depthFactor={this.props.depthFactor}
+          zoomable={this.props.zoomable}
+          zoom={this.props.zoom}
+          scaleExtent={this.props.scaleExtent}
+          nodeSize={this.props.nodeSize}
+          separation={this.props.separation}
+          transitionDuration={this.props.transitionDuration}
+          textLayout={this.props.textLayout}
+          allowForeignObjects={this.props.allowForeignObjects}
         />
       </div>
     );
