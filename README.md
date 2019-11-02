@@ -5,7 +5,7 @@
   <p align="center">
     Quickly visualize sentences in a Tree Diagram
     <br />
-    <a href="https://npm.runkit.com/react-sentence-tree" target="_blank">View Demo</a>
+    <a href="https://github.com/Lucas-Kohorst/react-sentence-tree-demo" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/Lucas-Kohorst/react-sentence-tree/issues" target="_blank">Report Bug</a>
     ·
@@ -23,9 +23,6 @@
 
 </p>
 
-# Work in Progress
-#### This project is currently a work in progress and may not work as intended
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -34,8 +31,8 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Installation](#1.-Install)
-  * [Configuring StanfordNLP](#3.-StanfordNLP)
+  * [Installation](#Install)
+  * [Configuring StanfordNLP](#StanfordNLP)
 * [Documentation](#documentation)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -113,13 +110,13 @@ This react component provides an easy way to the constituency/syntactical struct
 <!-- GETTING STARTED -->
 ## Getting Started
 
-## 1. Install
+## Install
 ```npm i react-sentence-tree```
 
-## 2. Import 
+## Import 
 ```import { SentenceTree } from 'react-sentence-tree```
 
-## 3. StanfordNLP
+## StanfordNLP
 
 Credits to [CoreNLP @gerardobort](https://www.npmjs.com/package/corenlp)
 
